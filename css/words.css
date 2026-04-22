@@ -1,0 +1,76 @@
+/* Reseteo básico y tipografía */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    /* Centrado horizontal */
+    align-items: center;
+    /* Centrado vertical */
+    height: 100vh;
+    margin: 0;
+}
+
+/* Tarjeta del juego */
+.contenedor-juego {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+#palabra-ingles {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1.1rem;
+
+    text-align: center;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#mensaje {
+    margin-top: 20px;
+    font-weight: bold;
+    min-height: 24px;
+    /* Evita que la tarjeta salte cuando aparece el texto */
+}
